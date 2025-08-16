@@ -229,7 +229,19 @@ li {
 
 /* name */
 
-.landing-text h1 { white-space: nowrap; font-size: 20rem; font-weight: 500; font-family: "The Historia demo", sans-serif; background: linear-gradient(to top, #00ffc0 25%, #c800ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; padding: 1rem; user-select: none; line-height: 1.1; }
+.landing-text h1 {
+  white-space: nowrap;
+  font-size: 20rem;
+  font-weight: 500;
+  font-family: "The Historia demo", sans-serif;
+  background: linear-gradient(to top, hsl(3, 100%, 50%) 25%, #0a092f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* fallback for other browsers */
+  color: transparent; /* ensures text takes gradient */
+  padding: 1rem;
+  user-select: none;
+  line-height: 1.1;
 
 .landing-text h6 {
     font-family: "Open Sans", "sans-serif";
